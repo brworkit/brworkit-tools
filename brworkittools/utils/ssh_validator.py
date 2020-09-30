@@ -1,9 +1,8 @@
 import base64
 import struct
-def validate_ssh(key):
+def validate_ssh(key, accepted_type="ssh-rsa"):
     try:
-        accepted_type, key_string = key.split()
-        accepted_type = "ssh-rsa"
+        prefix, key_string = key.split()
         data = base64.b64decode(key_string.encode('ASCII'))
         int_len = 4
         str_len = struct.unpack('>I', data[:int_len])[0]  # this should return 7
