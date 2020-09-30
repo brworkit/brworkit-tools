@@ -9,3 +9,10 @@ def enqueue(queue_name, payload):
         MessageBody=json.dumps(payload["body"])
     )
     return response
+
+def delete_message(queue_url, record):
+    sqs = boto3.client('sqs')
+    return sqs.delete_message(QueueUrl=queue_url, ReceiptHandle=record['receiptHandle'])
+
+def is_there_notification(context):
+    return 'Records' in context and len(context) >= 1
