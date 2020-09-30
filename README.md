@@ -1,10 +1,10 @@
-# brworkit
+# brworkit-tools
 
 ## Description
 A python package for avoid repetition of code.
 
 # Install
-    pip install brworkit
+    pip install brworkittools
 
 # Usage example
 
