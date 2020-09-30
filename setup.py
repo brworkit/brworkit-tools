@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="brworkittools",
-    version="0.0.2",
+    version="0.0.3",
     author="brworkit",
     author_email="brworkit@gmail.com",
     description="A python package for avoid repetitions",
