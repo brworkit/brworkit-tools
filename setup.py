@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="brworkit",
+    name="brworkittools",
     version="0.0.1",
     author="brworkit",
     author_email="brworkit@gmail.com",
     description="A python package for avoid repetitions",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/brworkit/mtools.git",
+    url="https://github.com/brworkit/brworkit-tools.git",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
