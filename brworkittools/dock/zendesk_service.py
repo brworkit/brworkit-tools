@@ -1,6 +1,8 @@
+#!/usr/bin/env python
+
 import requests
-from http import HTTPStatus
 from requests.auth import HTTPBasicAuth
+from http import HTTPStatus
 
 class ZendeskService(object):
     def __init__(self, user, password):
